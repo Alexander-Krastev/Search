@@ -5,6 +5,8 @@ VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinearSearch", "LinearSearch\LinearSearch.csproj", "{BBAED523-651D-4499-A812-C15B65DB2580}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearch", "BinarySearch\BinarySearch.csproj", "{FC270145-7F3A-497B-88DA-668BE059885B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BBAED523-651D-4499-A812-C15B65DB2580}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBAED523-651D-4499-A812-C15B65DB2580}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBAED523-651D-4499-A812-C15B65DB2580}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC270145-7F3A-497B-88DA-668BE059885B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC270145-7F3A-497B-88DA-668BE059885B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC270145-7F3A-497B-88DA-668BE059885B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC270145-7F3A-497B-88DA-668BE059885B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
