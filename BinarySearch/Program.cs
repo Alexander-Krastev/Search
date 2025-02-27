@@ -14,9 +14,10 @@
             }
             Console.Write("Enter a number you are seeking: ");
             int target = int.Parse(Console.ReadLine());
-            Search(array, target);
+            List<int> list = Search(array, target);
+            Console.WriteLine($"The number you were after is seen {list.Count} amount of times in positions: {string.Join(", ", list)}");
         }
-        static void Search(int[] array, int target)
+        static List<int> Search(int[] array, int target)
         {
             int left = 0, count=0;
             List<int> list = new List<int>();
@@ -26,8 +27,9 @@
                 int mid = left + (right - left) / 2;
                 if (array[mid] == target)
                 {
-                    count++;
+                    
                     list.Add(mid);
+                    break;
                 }
                 else if (array[mid] < target)
                 {
@@ -38,8 +40,25 @@
                     right = mid - 1;
                 }
             }
-            Console.WriteLine($"The number is seen {count} amount of times");
-            Console.WriteLine($"It is seen in positions: {string.Join(", ", list)}");
+            if (list.Count > 0)
+            {
+                int i = list[0];
+                list.Clear();
+                while (i >= 0 && array[i] == target)
+                {
+                    --i;
+                }
+                i++;
+                while (i < array.Length && array[i] == target)
+                {
+                    list.Add(i);
+                    i++;
+                }
+            }
+            return list.Count != 0 ? list : null;
+            
+            
+            
         }
     }
 }
